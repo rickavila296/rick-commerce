@@ -1,0 +1,27 @@
+# Dependencies: recreated by npm install
+node_modules/
+
+# Build and test output
+dist/
+build/
+coverage/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# Operating system and editor clutter
+.DS_Store
+Thumbs.db
+~$*.docx
+
+# Build-process files: kept locally, not published
+PROGRESS.md
+PHASE_START_PROMPT.md
+
+# Design documents: kept locally, not published
+docs/*.docx

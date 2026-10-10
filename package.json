@@ -1,0 +1,12 @@
+{
+  "name": "rick-commerce",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Open e-commerce starter on a plain PERN stack. Root scripts only; the apps live in client/ and server/.",
+  "scripts": {
+    "db:up": "docker compose up -d",
+    "db:stop": "docker compose stop",
+    "db:reset": "docker compose down -v && docker compose up -d",
+    "db:psql": "docker compose exec db psql -U rickcommerce -d rickcommerce_db"
+  }
+}
