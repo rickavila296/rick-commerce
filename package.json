@@ -2,6 +2,7 @@
   "name": "rick-commerce",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
   "description": "Open e-commerce starter on a plain PERN stack. Root scripts only; the apps live in client/ and server/.",
   "scripts": {
     "db:up": "docker compose up -d",

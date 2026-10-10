@@ -10,26 +10,26 @@ Early development. The repository currently contains the project setup, the loca
 
 ## What it is designed to do
 
-| Area        | Design                                                                                                                               |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| Catalogue   | Categories, products with variants (pack sizes), search, filters, sorting and pagination, with all list state in the URL             |
-| Cart        | Server-side cart for guests and customers, merged at login; prices always computed on the server                                     |
-| Checkout    | Single-page checkout; order placement in one database transaction that cannot oversell stock                                         |
-| Payments    | Card, GCash, Maya, QR Ph and cash on delivery through a mock provider behind one interface, with signed webhooks, retries and expiry |
-| Refunds     | Customer cancellation before shipping; automatic and manual refund paths                                                             |
-| Admin       | Catalogue, inventory with a movement ledger, order fulfilment, and four fixed staff roles                                            |
-| Bulk orders | A quote inquiry form with an admin inbox                                                                                             |
+| Area | Design |
+| --- | --- |
+| Catalogue | Categories, products with variants (pack sizes), search, filters, sorting and pagination, with all list state in the URL |
+| Cart | Server-side cart for guests and customers, merged at login; prices always computed on the server |
+| Checkout | Single-page checkout; order placement in one database transaction that cannot oversell stock |
+| Payments | Card, GCash, Maya, QR Ph and cash on delivery through a mock provider behind one interface, with signed webhooks, retries and expiry |
+| Refunds | Customer cancellation before shipping; automatic and manual refund paths |
+| Admin | Catalogue, inventory with a movement ledger, order fulfilment, and four fixed staff roles |
+| Bulk orders | A quote inquiry form with an admin inbox |
 
 ## Tech stack
 
-| Layer    | Choice                                                                   |
-| -------- | ------------------------------------------------------------------------ |
-| Language | TypeScript, strict mode, client and server                               |
-| API      | Node.js, Express 5, REST over JSON                                       |
+| Layer | Choice |
+| --- | --- |
+| Language | TypeScript, strict mode, client and server |
+| API | Node.js, Express 5, REST over JSON |
 | Database | PostgreSQL with hand-written, parameterized SQL and versioned migrations |
-| Auth     | Server-side sessions in an HttpOnly cookie, Argon2id password hashing    |
-| Frontend | React with Vite, React Router, TanStack Query, Tailwind CSS              |
-| Testing  | Vitest and Supertest against a real PostgreSQL database                  |
+| Auth | Server-side sessions in an HttpOnly cookie, Argon2id password hashing |
+| Frontend | React with Vite, React Router, TanStack Query, Tailwind CSS |
+| Testing | Vitest and Supertest against a real PostgreSQL database |
 
 ## Requirements
 
@@ -49,12 +49,12 @@ npm run db:psql
 
 `db:psql` opens a PostgreSQL prompt inside the container. Type `\q` to leave.
 
-| Script             | What it does                                |
-| ------------------ | ------------------------------------------- |
-| `npm run db:up`    | Start PostgreSQL in Docker                  |
-| `npm run db:stop`  | Stop it and keep the data                   |
+| Script | What it does |
+| --- | --- |
+| `npm run db:up` | Start PostgreSQL in Docker |
+| `npm run db:stop` | Stop it and keep the data |
 | `npm run db:reset` | Delete all data and start an empty database |
-| `npm run db:psql`  | Open a psql prompt in the database          |
+| `npm run db:psql` | Open a psql prompt in the database |
 
 ## Structure
 
@@ -84,4 +84,4 @@ No real product photographs, logos or packaging are used. Product images are gen
 
 ## Licence
 
-No licence has been chosen yet. Until one is added, the code is published for reading and normal copyright applies.
+Released under the [MIT Licence](LICENSE). You may use, change and redistribute the code as long as the copyright notice is kept. The licence covers the code in this repository only; it grants no rights to the third-party brand names mentioned in it.
