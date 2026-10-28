@@ -1,0 +1,5 @@
+# Planning docs and AI agents: local only, never pushed (DEC-055)
+AGENTS.md
+.opencode/
+docs/
+PROJECT_VISION.md
